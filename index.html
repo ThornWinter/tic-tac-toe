@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css" />
+<link href="http://code.jquery.com/ui/1.10.4/themes/ui-darkness/jquery-ui.css" rel="stylesheet">
+
+
+<body onload="runGame()">
+<div id="output"></div>
+<div id="dialog" title="Select Your Mark">
+  <p>Will you play as X or O?</p>
+  </div>
+<h1>TIC TAC TOE</h1>
+<div id="board">
+  <button id="tl" class="square" onclick="mark(tl, 'tl')"></button>
+  <button id="tc" class="square" onclick="mark(tc, 'tc')"></button>
+  <button id="tr" class="square" onclick="mark(tr, 'tr')"></button>
+  <button id="ml" class="square" onclick="mark(ml, 'ml')"></button>
+  <button id="mc" class="square" onclick="mark(mc, 'mc')"></button>
+  <button id="mr" class="square" onclick="mark(mr, 'mr')"></button>
+  <button id="bl" class="square" onclick="mark(bl, 'bl')"></button>
+  <button id="bc" class="square" onclick="mark(bc, 'bc')"></button>
+  <button id="br" class="square" onclick="mark(br, 'br')"></button>
+</div>
+
+<script src="script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+
+</body>
+</html>
